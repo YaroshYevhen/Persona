@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Имидж-лаборатория "ПЕРСОНА"</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="/css/my-bootstrap.css">
+	<link rel="stylesheet" href="/css/slick-theme.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/media.css">
+</head>
+<body>
+	<header class="header position-relative">
+		<div class="header-top d-flex justify-content-md-between align-items-center mx-auto">
+			<div class="header-cities d-none d-lg-block">
+				<span class="header-cities__item">Коломна</span>
+				<span class="header-cities__item">Воскресенск</span>
+				<span class="header-cities__item">Егорьевск</span>
+			</div>
+			<nav class="nav">
+				<ul class="nav-ul d-flex justify-content-between">
+					<li class="nav__li"><a href="#" class="nav__item">услуги </a></li>
+					<li class="nav__li"><a href="#" class="nav__item">салоны</a></li>
+					<li class="nav__li"><a href="#" class="nav__item">отзывы</a></li>
+					<li class="nav__li"><a href="#" class="nav__item">блог</a></li>
+					<li class="nav__li"><a href="#" class="nav__item">контакты</a></li>
+					<li class="nav__li"><a href="#" class="nav__item">бонусы и акции</a></li>
+				</ul>
+			</nav>
+			<a href="tel:+7 499 213-13-13" class="header__tel"><i class="icon-tel"></i>+7 499 213-13-13</a>
+			<button class="standart-btn header__btn d-block d-md-none">записаться</button>
+			<a href="mailto:info@persona-you.ru" class="header__email"><i class="icon-email"></i>info@persona-you.ru</a>
+			<div class="header-socials d-flex d-md-none d-xl-flex">
+				<a href="mailto:info@persona-you.ru" class="header-socials__item header-socials__item_email justify-content-center align-items-center"><i class="icon-email"></i></a>
+				<a href="#" class="header-socials__item header-socials__item_inst d-flex justify-content-center align-items-center"><i class="icon-inst"></i></a>
+				<a href="#" class="header-socials__item header-socials__item_vk d-flex justify-content-center align-items-center"><i class="icon-vk"></i></a>
+			</div>
+		</div>
+		<div class="header-bottom d-flex justify-content-between align-items-center position-relative mx-auto">
+			<a href="#" class="header__logo">
+				<img src="/img/logo.png" alt="logo">
+				<p class="text-center">имидж-лаборатория твоего стиля</p>
+			</a>
+			<div class="header-services d-none d-lg-flex justify-content-between">
+				<div class="header-services__item dropdown-parent">
+					<span class="dropdown"><i class="icon-header-service-1"></i><span>парикмахерский сервис</span><i class="icon-dropdown"></i></span>
+					<ul class="dropdown-content">
+						<li class="dropdown__item"><a href="documents/categories.html">Стрижка</a></li>
+						<li class="dropdown__item"><a href="documents/payment&delivery.html">Окрашивание</a></li>
+						<li class="dropdown__item"><a href="documents/return-policy.html">Укладка</a></li>
+						<li class="dropdown__item"><a href="#">Кератиновое выпрямление</a></li>
+						<li class="dropdown__item"><a href="documents/discounts.html">Ботокс для волос</a></li>
+						<li class="dropdown__item"><a href="documents/discounts.html">Уход</a></li>
+						<li class="dropdown__item"><a href="documents/discounts.html">Обьем и густота</a></li>
+					</ul>
+				</div>
+				<div class="header-services__item dropdown-parent">
+					<span class="dropdown"><i class="icon-header-service-2"></i><span>косметология</span><i class="icon-dropdown"></i></span>
+					<div class="dropdown-content d-flex">
+						<div class="dropdown-part">
+							<h2>Лицо:</h2>
+							<ul>
+								<li class="dropdown__item"><a href="documents/categories.html">Омоложение / лифтинг</a></li>
+								<li class="dropdown__item"><a href="documents/payment&delivery.html">Ультразвуковая чистка</a></li>
+								<li class="dropdown__item"><a href="documents/return-policy.html">Эпиляция</a></li>
+								<li class="dropdown__item"><a href="#">Инъекции</a></li>
+								<li class="dropdown__item"><a href="documents/discounts.html">Регенерация кожи</a></li>
+								<li class="dropdown__item"><a href="documents/discounts.html">Увлажнение</a></li>
+								<li class="dropdown__item"><a href="documents/discounts.html">Пилинг</a></li>
+								<li class="dropdown__item"><a href="documents/discounts.html">Пигментация</a></li>
+								<li class="dropdown__item"><a href="documents/discounts.html">Купероз</a></li>
+								<li class="dropdown__item"><a href="documents/discounts.html">Акне</a></li>
+							</ul>
+						</div>
+						<div class="dropdown-part">
+							<h2>Тело:</h2>
+							<ul>
+								<li class="dropdown__item"><a href="documents/categories.html">Похудение</a></li>
+								<li class="dropdown__item"><a href="documents/payment&delivery.html">Целлюлит</a></li>
+								<li class="dropdown__item"><a href="documents/return-policy.html">Эпиляция</a></li>
+								<li class="dropdown__item"><a href="#">Упругость кожи</a></li>
+								<li class="dropdown__item"><a href="documents/discounts.html">Лимфодренаж</a></li>
+								<li class="dropdown__item"><a href="documents/discounts.html">Солярий</a></li>
+							</ul>
+						</div>
+						<div class="dropdown-part">
+							<h2>Make-up:</h2>
+							<ul>
+								<li class="dropdown__item"><a href="documents/categories.html">Визаж</a></li>
+								<li class="dropdown__item"><a href="documents/payment&delivery.html">Архитектура бровей</a></li>
+								<li class="dropdown__item"><a href="documents/return-policy.html">Биотатуаж хной</a></li>
+								<li class="dropdown__item"><a href="#">Наращивание ресниц</a></li>
+								<li class="dropdown__item"><a href="documents/discounts.html">Перманентный макияж</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="header-services__item dropdown-parent">
+					<span class="dropdown"><i class="icon-header-service-3"></i><span>ногтевой сервис</span><i class="icon-dropdown"></i></span>
+					<ul class="dropdown-content">
+						<li class="dropdown__item"><a href="documents/categories.html">Маникюр</a></li>
+						<li class="dropdown__item"><a href="documents/payment&delivery.html">Педикюр</a></li>
+						<li class="dropdown__item"><a href="documents/return-policy.html">Омоложение кожи рук</a></li>
+						<li class="dropdown__item"><a href="#">Покрытие</a></li>
+						<li class="dropdown__item"><a href="documents/discounts.html">Восстановление/укрепление ногтей</a></li>
+						<li class="dropdown__item"><a href="documents/discounts.html">Наращивание ногтей</a></li>
+					</ul>
+				</div>
+				<div class="header-services__item"><span><i class="icon-header-service-4"></i><span>солярий</span></span></div>
+			</div>
+			<button class="standart-btn header__btn d-none d-md-block">записаться</button>
+			<div class="header-socials d-none d-md-flex d-lg-none">
+				<a href="mailto:info@persona-you.ru" class="header-socials__item header-socials__item_email justify-content-center align-items-center"><i class="icon-email"></i></a>
+				<a href="#" class="header-socials__item header-socials__item_inst d-flex justify-content-center align-items-center"><i class="icon-inst"></i></a>
+				<a href="#" class="header-socials__item header-socials__item_vk d-flex justify-content-center align-items-center"><i class="icon-vk"></i></a>
+			</div>
+			<div class="hamburger d-block d-md-none">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<div class="service__img position-relative" style="background-image: url(../img/service-open.jpg);">
+			<div class="breadcrumbs-substrate">
+				<div class="breadcrumbs-substrate__layer"></div>
+				<div class="breadcrumbs-substrate__img" style="background-image: url(../img/service-open.jpg);"></div>
+			</div>
+			<div class="container">
+				<ul class="breadcrumbs">
+		      <li class="breadcrumbs__item"><a href="#">Главная</a></li>
+		      <li class="breadcrumbs__item"><a href="#">Услуги</a></li>
+		      <li class="breadcrumbs__item"><a href="#">Парикмахерский сервис</a></li>
+		      <li class="breadcrumbs__item"><a href="#">Стрижка</a></li>
+		    </ul>
+			</div>
+		</div>
+		<section class="service container">
+			<h1 class="title-l service__title">Стрижка</h1>
+			<p class="service__text">С другой стороны, граница обучения кадров способствует подготовке и реализации модели развития. Задача организации, в особенности же высокое качество позиционных исследований обеспечивает широкому кругу (специалистов) участие в формировании экономической целесообразности принимаемых решений. В рамках спецификации современных стандартов, элементы политического процесса.</p>
+			<button class="standart-btn standart-btn_big service__btn">записаться к мастеру</button>
+		</section>
+		<div class="services-container container">
+			<h1 class="services__title title-m">Категории и цены</h1>
+			<ul class="services-list">
+				<li class="services-item w-100 d-flex justify-content-between">
+						<span class="services__name">Женская стрижка</span>
+						<div class="services-numbers">
+							<span class="services__time">60 мин.</span>
+							<span class="services__price">от 800 руб.</span>
+						</div>
+				</li>
+				<li class="services-item w-100 d-flex justify-content-between">
+						<span class="services__name">Стрижка горячими ножницами</span>
+						<div class="services-numbers">
+							<span class="services__time">60 мин.</span>
+							<span class="services__price">от 1300 руб.</span>
+						</div>
+				</li>
+				<li class="services-item w-100 d-flex justify-content-between">
+						<span class="services__name">Мужская стрижка</span>
+						<div class="services-numbers">
+							<span class="services__time">40 мин.</span>
+							<span class="services__price">от 450 руб.</span>
+						</div>
+				</li>
+				<li class="services-item w-100 d-flex justify-content-between">
+						<span class="services__name">Детская стрижка</span>
+						<div class="services-numbers">
+							<span class="services__time">40 мин.</span>
+							<span class="services__price">500 руб.</span>
+						</div>
+				</li>
+				<li class="services-item w-100 d-flex justify-content-between">
+						<span class="services__name">Коррекция бороды</span>
+						<div class="services-numbers">
+							<span class="services__time">30 мин.</span>
+							<span class="services__price">450 руб.</span>
+						</div>
+				</li>
+				<li class="services-item w-100 d-flex justify-content-between">
+					<span class="services__name">Полировка волос</span>
+					<div class="services-numbers">
+						<span class="services__time">60 мин.</span>
+						<span class="services__price">уточняйте по телефону</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<section class="specialists container">
+			<h1 class="specialists__title title-m">Специалисты</h1>
+			<div class="specialists-tabs d-flex justify-content-between">
+				<div class="specialists-dropdown d-flex d-md-none flex-column">
+					<div class="specialists-dropdown__current d-flex justify-content-between align-items-center"><span>Коломна</span><i class="icon-dropdown"></i> </div>
+					<span class="specialists-dropdown__item d-flex align-items-center justify-content-between" data-city="Voskresensk">Воскресенск <i class="icon-check"></i></span>
+					<span class="specialists-dropdown__item d-flex align-items-center justify-content-between" data-city="Egorievsk">Егорьевск <i class="icon-check"></i></span>
+					<span class="specialists-dropdown__item d-flex align-items-center justify-content-between current" data-city="Kolomna">Коломна <i class="icon-check"></i></span>
+				</div>
+				<span class="specialists-tabs__item d-none d-md-block current" data-city="Kolomna">Коломна</span>
+				<span class="specialists-tabs__item d-none d-md-block" data-city="Voskresensk">Воскресенск</span>
+				<span class="specialists-tabs__item d-none d-md-block" data-city="Egorievsk">Егорьевск</span>
+			</div>
+			<div class="specialists-slider current" data-city="Kolomna">
+				<div class="specialists-slider-nav d-flex">
+					<button class="specialists-slider__button specialists-slider__prev"><i class="icon-slider-arrow"></i></button>
+					<div class="specialists-slider__counter d-flex align-items-center"><span class="d-flex align-items-center">/</span></div>
+					<button class="specialists-slider__button specialists-slider__next"><i class="icon-slider-arrow"></i></button>
+				</div>
+				<div class="specialists-item d-flex current" data-slide="1">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="2">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="3">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="4">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="5">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="specialists-slider" data-city="Voskresensk">
+				<div class="specialists-slider-nav d-flex">
+					<button class="specialists-slider__button specialists-slider__prev"><i class="icon-slider-arrow"></i></button>
+					<div class="specialists-slider__counter d-flex align-items-center"><span class="d-flex align-items-center">/</span></div>
+					<button class="specialists-slider__button specialists-slider__next"><i class="icon-slider-arrow"></i></button>
+				</div>
+				<div class="specialists-item d-flex current" data-slide="1">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="2">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="3">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="4">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="5">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="specialists-slider" data-city="Egorievsk">
+				<div class="specialists-slider-nav d-flex">
+					<button class="specialists-slider__button specialists-slider__prev"><i class="icon-slider-arrow"></i></button>
+					<div class="specialists-slider__counter d-flex align-items-center"><span class="d-flex align-items-center">/</span></div>
+					<button class="specialists-slider__button specialists-slider__next"><i class="icon-slider-arrow"></i></button>
+				</div>
+				<div class="specialists-item d-flex current" data-slide="1">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="2">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="3">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="4">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+				<div class="specialists-item d-flex" data-slide="5">
+					<div class="specialists__img" style="background-image: url(../img/specialist-1.jpg);"></div>
+					<div class="specialists-info d-flex flex-column">
+						<h2 class="specialists__name">Элизар</h2>
+						<span class="specialists__specialization">Стилист-парикмахер</span>
+						<span class="specialists__expirience">(5 лет опыта)</span>
+						<div class="specialists__education">
+							<span>Образование:</span>
+							<p>Академия ДОЛОРЕС</p>
+						</div>
+						<div class="specialists__education">
+							<span>Курсы (семинары):</span>
+							<p>Семинары всех основных брендов профессиональной косметики</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="seo container">
+			<h1 class="title-m seo__title">Сео-текст</h1>
+			<p class="seo__text">В рамках спецификации современных стандартов, интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Учитывая ключевые сценарии поведения, современная методология разработки играет важную роль в формировании экспериментов, поражающих по своей масштабности и грандиозности. <br><br>
+			В рамках спецификации современных стандартов, интерактивные прототипы призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Учитывая ключевые сценарии поведения, современная методология разработки играет важную роль в формировании экспериментов, поражающих по своей масштабности и грандиозности. </p>
+		</section>
+
+	</main>
+
+	<footer class="footer d-flex">
+		<div class="container d-flex align-items-center justify-content-md-between justify-content-center flex-wrap">
+			<a href="#"><img src="/img/footer-logo.png" alt="logo" class="footer__logo"></a>
+			<address class="address d-flex justify-content-between">
+				<div class="address-half">
+					<a href="tel:+7 499 213-13-13" class="address__item"><i class="icon-tel"></i><span>+7 499 213-13-13</span></a>
+					<a href="mailto:info@persona-you.ru" class="address__item"><i class="icon-email"></i><span>info@persona-you.ru</span></a>
+				</div>
+				<div class="address-half">
+					<a href="instagram.com/persona_you" class="address__item"><i class="icon-inst"></i><span>instagram.com/persona_you</span></a>
+					<a href="vk.com/persona_you" class="address__item"><i class="icon-vk"></i><span>vk.com/persona_you</span></a>
+				</div>
+			</address>
+			<div class="footer-nav d-flex justify-content-between">
+				<div class="footer-nav-part">
+					<a href="#" class="footer-nav__item">услуги</a>
+					<a href="#" class="footer-nav__item">салоны</a>
+				</div>
+				<div class="footer-nav-part">
+					<a href="#" class="footer-nav__item">отзывы</a>
+					<a href="#" class="footer-nav__item">блог</a>
+				</div>
+				<div class="footer-nav-part">
+					<a href="#" class="footer-nav__item">контакты</a>
+					<a href="#" class="footer-nav__item">бонусы и акции</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="/script/jquery.js"></script>
+	<script src="/script/slick.min.js"></script>
+	<script src="/script/script.js"></script>
+	<script>
+		APP.specialistsSliderBtn = $('.specialists-slider__button');
+		APP.specialistsSliderSwitch = $('.specialists-tabs__item');
+		APP.specialistsDropdownBtn = $('.specialists-dropdown__current');
+		APP.specialistsDropdownItem = $('.specialists-dropdown__item');
+		let isCanSlide = ($(window).scrollTop() + $(window).height() > $('.specialists-slider').position().top) ? true : false;
+
+		function countSpecialistsSlides(slider) {
+		  let sliderLenght = $(slider).find('.specialists-item').length,
+		      currentIndex =  $(slider).find('.specialists-item.current').data('slide');
+
+		  $(slider).find('.specialists-slider__counter span').attr('data-lenght',sliderLenght);
+		  $(slider).find('.specialists-slider__counter span').attr('data-current',currentIndex);
+		}
+
+		APP.$document.ready(function() {
+			APP.specialistsDropdownItem.on('click', function() {
+				let city = $(this).data('city');
+
+				$('.specialists-dropdown__item.current').removeClass('current');
+				$(this).addClass('current');
+				$('.specialists-tabs__item[data-city="' + city + '"]').click();
+				$(this).parents('.specialists-dropdown').removeClass('show');
+			})
+
+			APP.specialistsDropdownBtn.on('click', function() {
+				$(this).parents('.specialists-dropdown').toggleClass('show');
+			})
+
+			$(window).on('scroll', function() {
+		    isCanSlide = ($(window).scrollTop() + $(window).height() > $('.specialists-slider').position().top) ? true : false;
+		  })
+			$(document).keyup(function(e) { 
+	      if (e.keyCode == 39 && isCanSlide) { 
+	        $('.specialists-slider.current .specialists-slider__next').click();
+	      } 
+	      if (e.keyCode == 37 && isCanSlide) { 
+	        $('.specialists-slider.current .specialists-slider__prev').click();
+	      } 
+	  	});
+
+	  	APP.specialistsSliderSwitch.on('click', function() {
+		    let city = $(this).data('city');
+
+		    $('.specialists-tabs__item.current').removeClass('current');
+		    $(this).addClass('current');
+		    $('.specialists-slider.current').removeClass('current');
+		    $('.specialists-slider[data-city="' + city + '"]').addClass('current');
+		  })
+
+		  $('.specialists-slider').each(function() {
+		    countSpecialistsSlides(this);
+		  })
+
+		  APP.specialistsSliderBtn.on('click', function() {
+		    let parent = $(this).parents('.specialists-slider'),
+		        currentSlide = parent.find('.specialists-item.current'),
+		        nextSlide = currentSlide.next(),
+		        lastSlide = parent.find('.specialists-item:last-of-type'),
+		        lastSlideClone = lastSlide.clone().addClass('prev'),
+		        clone = currentSlide.clone().removeClass('current');
+
+		    if($(this).hasClass('specialists-slider__prev')) {
+		      currentSlide.before(lastSlideClone);
+		      lastSlide.remove();
+		      lastSlideClone.addClass('current');
+		      setTimeout(function (){
+		        lastSlideClone.removeClass('prev');
+		      }, 100);
+		      currentSlide.removeClass('current');
+		    } else if($(this).hasClass('specialists-slider__next')) {
+		      currentSlide.addClass('prev').removeClass('current');
+		      nextSlide.addClass('current');
+		      setTimeout(function (){
+		        currentSlide.removeClass('prev');
+		        lastSlide.after(currentSlide);
+		      }, 300);
+		    }
+		    countSpecialistsSlides(parent);
+		  })
+		})
+		
+	</script>
+	
+</body>
+</html>
