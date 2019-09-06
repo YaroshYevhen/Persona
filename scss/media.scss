@@ -601,6 +601,7 @@
 			margin-bottom: 0;
 		}
 		&-slider {
+			position: relative;
 			&.current {
 				height: 580px;
 			}
@@ -633,10 +634,12 @@
 			height: 230px;
 			width: 330px;
 			background-position: 50% 30%;
+			position: relative;
 		}
 		&-info {
 			padding: 20px 0 0;
 			width: 100%;
+			position: relative;
 		}
 		&__name {
 			font-size: 28px;
