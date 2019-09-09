@@ -27,7 +27,8 @@
   .contacts-clickable:hover .contacts__city::before, .contacts-clickable:hover .contacts__city::after {
     background-color: #929292;
   }
-  .contacts__tel:hover {
+  .contacts__tel:hover,
+  .salons-address__item a:hover {
     color: #646464;
   }
   .address__item:hover,
@@ -45,14 +46,20 @@
   .services-item a:hover span {
     color: #d1b100;
   }
-  .specialists-tabs__item:hover {
+  .specialists-tabs__item:hover,
+  .salons-tabs__item:hover {
     color: #929292;
   }
-  .specialists-tabs__item:hover::after {
+  .specialists-tabs__item:hover::after,
+  .salons-tabs__item:hover::after {
     background-color: #929292;
   }
-  .specialists-tabs__item:hover::before {
+  .specialists-tabs__item:hover::before,
+  .salons-tabs__item:hover::before {
     background-color: #929292;
+  }
+  .blog-item:hover {
+    box-shadow: 0px 0px 16px 0px rgba(93, 4, 0, 0.2);
   }
 }
 
@@ -134,6 +141,9 @@
   .address {
     width: 350px;
   }
+  .specialists-tabs__item {
+    width: 30%;
+  }
   .specialists-item.current + .specialists-item {
     max-height: 50%;
     max-width: 150px;
@@ -159,6 +169,35 @@
   }
   .specialists-item.current + .specialists-item + .specialists-item + .specialists-item .specialists__img {
     max-width: 90px;
+  }
+  .salons-tabs__item {
+    width: 30%;
+  }
+  .work {
+    height: 680px;
+  }
+  .work .container {
+    height: auto;
+  }
+  .work .row {
+    height: auto;
+  }
+  .work__img {
+    position: relative;
+    height: 320px;
+    margin-bottom: 40px;
+  }
+  .work .border {
+    position: absolute;
+    height: 1px;
+    width: 10000px;
+    background-color: #a5a5a5;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+  }
+  .work p {
+    text-align: center;
   }
 }
 
@@ -282,6 +321,54 @@
   .specialists-info {
     width: 390px;
   }
+  .salons {
+    margin-bottom: 0;
+    border-bottom: 1px solid #fff;
+  }
+  .salons-tabs__item {
+    font-size: 26px;
+  }
+  .salons-address__item:first-of-type {
+    width: 210px;
+  }
+  .salons-address__item:last-of-type {
+    width: 210px;
+    padding-left: 80px;
+  }
+  .work {
+    margin-bottom: 0;
+  }
+  .work__img {
+    max-width: none;
+    max-height: none;
+    margin-bottom: 40px;
+  }
+  .testimonials-page {
+    margin-bottom: 160px;
+  }
+  .testimonials-page__title {
+    font-size: 48px;
+    line-height: 52px;
+  }
+  .testimonials-page-text p {
+    font-size: 18px;
+  }
+  .testimonials-page__btn {
+    width: 100%;
+  }
+  .testimonials-container {
+    padding-bottom: 100px;
+  }
+  .blog {
+    padding-bottom: 120px;
+  }
+  .blog-container {
+    margin: 0 0 -30px 0;
+  }
+  .blog-item {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -293,8 +380,15 @@
     font-size: 32px;
     line-height: 36px;
   }
+  .breadcrumbs_high {
+    height: 80px;
+    padding: 15px 0;
+  }
   .header {
-    margin-bottom: 6px;
+    padding-bottom: 6px;
+  }
+  .header.border-bottom {
+    border-bottom: none;
   }
   .header::before {
     top: 58px;
@@ -415,6 +509,8 @@
   .testimonials__img {
     height: 190px;
     width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #d1d1d1;
   }
   .testimonials-text {
     width: 100%;
@@ -471,6 +567,9 @@
   .services-container {
     margin-bottom: 80px;
   }
+  .services__title_small {
+    font-size: 30px;
+  }
   .services__subtitle {
     display: flex;
     justify-content: space-between;
@@ -525,11 +624,25 @@
   .seo {
     padding-bottom: 70px;
   }
+  .service {
+    margin-bottom: 75px;
+  }
+  .service__img {
+    height: 450px;
+    margin-bottom: 50px;
+  }
+  .service__img .breadcrumbs-substrate__img {
+    height: 450px;
+  }
+  .service__title {
+    margin-bottom: 30px;
+  }
+  .specialists {
+    margin-bottom: 70px;
+  }
   .specialists__title {
     margin-bottom: 0;
-  }
-  .specialists-slider {
-    position: relative;
+    font-size: 30px;
   }
   .specialists-slider.current {
     height: 580px;
@@ -629,7 +742,7 @@
     padding: 30px 15px 15px;
     border: 1px solid #8c8c8c;
     background-color: #fff;
-    transition-delay: 0s;
+    transition-delay: .15s, 0s, .15s, .15s;
   }
   .specialists-dropdown.show .icon-dropdown {
     transform: rotate(-180deg);
@@ -646,9 +759,166 @@
     font-size: 9px;
     display: none;
   }
+  .salons__title {
+    margin-bottom: 30px;
+  }
+  .salons__map {
+    height: 450px;
+  }
+  .salons-slider {
+    padding-bottom: 60px;
+    margin-bottom: 40px;
+  }
+  .salons-slider__item {
+    height: 205px;
+  }
+  .salons-slider .slick-arrow {
+    bottom: 0;
+    top: auto;
+    transform: none;
+  }
+  .salons-slider .slick-next {
+    right: 0;
+  }
+  .salons-slider .slick-prev {
+    left: 0;
+  }
+  .salons-address {
+    flex-direction: column;
+  }
+  .salons-address__item:nth-of-type(n) {
+    width: 100%;
+    padding-left: 0;
+  }
+  .salons-address__item:nth-of-type(n) + .salons-address__item {
+    margin-top: 25px;
+  }
+  .salons__title {
+    margin-bottom: 0;
+  }
+  .salons-tabs {
+    height: 63px;
+    max-height: 63px;
+    overflow: visible;
+    position: relative;
+  }
+  .salons-dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 7;
+    width: 100%;
+    border: 1px solid transparent;
+    padding: 30px 0px 0;
+    max-height: 63px;
+    overflow: hidden;
+    transition: max-height .3s, padding .6s, border .15s, background-color .15s;
+    transition-delay: 0s, 0s, .15s, .15s;
+  }
+  .salons-dropdown__current {
+    font-size: 18px;
+    line-height: 30px;
+    border-bottom: 1px solid #8c8c8c;
+    color: #141414;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  .salons-dropdown__current .icon-dropdown {
+    transition: transform .3s;
+  }
+  .salons-dropdown.show {
+    max-height: 500px;
+    padding: 30px 15px 15px;
+    border: 1px solid #8c8c8c;
+    background-color: #fff;
+    transition-delay: .15s, 0s, .15s, .15s;
+  }
+  .salons-dropdown.show .icon-dropdown {
+    transform: rotate(-180deg);
+  }
+  .salons-dropdown__item {
+    font-size: 18px;
+    line-height: 48px;
+    color: #646464;
+  }
+  .salons-dropdown__item.current i {
+    display: block;
+  }
+  .salons-dropdown__item i {
+    font-size: 9px;
+    display: none;
+  }
+  .work__img {
+    height: 235px;
+    max-height: none;
+    max-width: none;
+  }
+  .testimonials-page {
+    height: 480px;
+    margin-top: -80px;
+    margin-bottom: 80px;
+    padding-top: 80px;
+  }
+  .testimonials-page__img {
+    display: none;
+  }
+  .testimonials-page-text {
+    width: 100%;
+  }
+  .testimonials-page__btn {
+    width: 330px;
+  }
+  .testimonials-container {
+    padding-bottom: 70px;
+  }
+  .testimonials-container .testimonials__img {
+    height: 190px;
+    margin: 0;
+    float: none;
+  }
+  .testimonials-container .testimonials-text {
+    padding: 20px 30px 30px 30px;
+  }
+  .blog {
+    padding-bottom: 80px;
+  }
+  .blog__title {
+    margin-bottom: 30px;
+  }
+  .blog-item {
+    height: 417px;
+  }
+  .blog-content {
+    padding: 25px 30px 25px;
+  }
+  .blog__subtitle {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+  .blog__text {
+    margin-bottom: 15px;
+    max-height: 130px;
+  }
+  .blog__text p {
+    font-size: 14px;
+  }
+  .blog__more {
+    font-size: 14px;
+  }
+  .blog__date {
+    font-size: 14px;
+  }
+  .blog__btn {
+    width: 330px;
+  }
 }
 
 @media (max-width: 575px) {
+  .breadcrumbs__item {
+    letter-spacing: -.25px;
+  }
   .about {
     margin-bottom: 65px;
   }

@@ -30,7 +30,8 @@
 			}
 		}
 	}
-	.contacts__tel:hover {
+	.contacts__tel:hover,
+	.salons-address__item a:hover {
 		color: #646464;
 	}
 	.address__item:hover,
@@ -50,7 +51,8 @@
 			color: #d1b100;
 		}
 	}
-	.specialists-tabs__item:hover {
+	.specialists-tabs__item:hover,
+	.salons-tabs__item:hover {
 		color: #929292;
 		&::after {
 			background-color: #929292;
@@ -58,6 +60,9 @@
 		&::before {
 			background-color: #929292;
 		}
+	}
+	.blog-item:hover {
+		box-shadow: 0px 0px 16px 0px rgba(93, 4, 0, 0.2);
 	}
 }
 
@@ -170,6 +175,11 @@
 		width: 350px;
 	}
 	.specialists {
+		&-tabs {
+			&__item {
+				width: 30%;
+			}
+		}
 		&-item {
 			&.current {
 				& + .specialists-item {
@@ -199,6 +209,39 @@
 					}
 				}
 			}
+		}
+	}
+	.salons {
+		&-tabs {
+			&__item {
+				width: 30%;
+			}
+		}
+	}
+	.work {
+		height: 680px;
+		.container {
+			height: auto;
+		}
+		.row {
+			height: auto;
+		}
+		&__img {
+			position: relative;
+			height: 320px;
+			margin-bottom: 40px;
+		}
+		.border {
+			position: absolute;
+			height: 1px;
+			width: 10000px;
+			background-color: #a5a5a5;
+			left: 50%;
+			bottom: 40px;
+			transform: translateX(-50%);
+		}
+		p {
+			text-align: center;
 		}
 	}
 }
@@ -339,6 +382,62 @@
 			width: 390px;
 		}
 	}
+	.salons {
+		margin-bottom: 0;
+		border-bottom: 1px solid #fff;
+		&-tabs {
+			&__item {
+				font-size: 26px;
+			}
+		}
+		&-address {
+			&__item {
+				&:first-of-type {
+					width: 210px;
+				}
+				&:last-of-type {
+					width: 210px;
+					padding-left: 80px;
+				}
+			}
+		}
+	}
+	.work {
+		margin-bottom: 0;
+		&__img {
+			max-width: none;
+			max-height: none;
+			margin-bottom: 40px;
+		}
+	}
+	.testimonials-page {
+		margin-bottom: 160px;
+		&__title {
+			font-size: 48px;
+    	line-height: 52px;
+		}
+		&-text {
+			p {
+				font-size: 18px;
+			}
+		}
+		&__btn {
+			width: 100%;
+		}
+	}
+	.testimonials-container {
+		padding-bottom: 100px;
+	}
+	.blog {
+		padding-bottom: 120px;
+		&-container {
+			margin: 0 0 -30px 0;
+		}
+		&-item {
+			width: 100%;
+			margin: 0 0 30px 0;
+		}
+	}
 }
 
 @media (max-width: 767px) {
@@ -350,8 +449,17 @@
 			line-height: 36px;
 		}
 	}
+	.breadcrumbs {
+		&_high {
+			height: 80px;
+			padding: 15px 0;
+		}
+	}
 	.header {
-		margin-bottom: 6px;
+		padding-bottom: 6px;
+		&.border-bottom {
+			border-bottom: none;
+		}
 		&::before {
 	    top: 58px;
 	  }
@@ -477,6 +585,8 @@
 		&__img {
 			height: 190px;
 			width: 100%;
+			border-right: none;
+			border-bottom: 1px solid #d1d1d1;
 		}
 		&-text {
 			width: 100%;
@@ -539,6 +649,11 @@
 		&-container {
 			margin-bottom: 80px;
 		}
+		&__title {
+			&_small {
+				font-size: 30px;
+			}
+		}
 		&__subtitle {
 			display: flex;
 	    justify-content: space-between;
@@ -546,6 +661,7 @@
 			&::after {
 				display: none;
 			}
+
 			& + .services-list {
 				max-height: 0;
 				padding-top: 0;
@@ -596,12 +712,26 @@
 	.seo {
 		padding-bottom: 70px;
 	}
+	.service {
+		margin-bottom: 75px;
+		&__img {
+			height: 450px;
+			margin-bottom: 50px;
+			.breadcrumbs-substrate__img {
+				height: 450px;
+			}
+		}
+		&__title {
+			margin-bottom: 30px;
+		}
+	}
 	.specialists {
+		margin-bottom: 70px;
 		&__title {
 			margin-bottom: 0;
+			font-size: 30px;
 		}
 		&-slider {
-			position: relative;
 			&.current {
 				height: 580px;
 			}
@@ -702,7 +832,7 @@
 	      padding: 30px 15px 15px;
 	      border: 1px solid #8c8c8c;
 	      background-color: #fff;
-	      transition-delay: 0s;
+	      transition-delay: .15s, 0s, .15s, .15s;
 	      .icon-dropdown {
 	      	transform: rotate(-180deg);
 	      }
@@ -723,9 +853,173 @@
 	    }
 	  }
 	}
+	.salons {
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__map {
+			height: 450px;
+		}
+		&-slider {
+			padding-bottom: 60px;
+			margin-bottom: 40px;
+			&__item {
+				height: 205px;
+			}
+			.slick-arrow {
+				bottom: 0;
+				top: auto;
+				transform: none;
+			}
+			.slick-next {
+				right: 0;
+			}
+			.slick-prev {
+				left: 0;
+			}
+		}
+		&-address {
+			flex-direction: column;
+			&__item:nth-of-type(n) {
+				width: 100%;
+				padding-left: 0;
+				& + .salons-address__item {
+					margin-top: 25px;
+				}
+			}
+		}
+		&__title {
+			margin-bottom: 0;
+		}
+		&-tabs {
+	    height: 63px;
+	    max-height: 63px;
+	    overflow: visible;
+	    position: relative;
+		}
+		&-dropdown {
+			position: absolute;
+			top: 0;
+			left: 0;
+	    background-color: transparent;
+	    z-index: 7;
+	    width: 100%;
+	    border: 1px solid transparent;
+	    padding: 30px 0px 0;
+	    max-height: 63px;
+	    overflow: hidden;
+	    transition: max-height .3s, padding .6s, border .15s, background-color .15s;
+	    transition-delay: 0s, 0s, .15s, .15s;
+	    &__current {
+	    	font-size: 18px;
+	    	line-height: 30px;
+	    	border-bottom: 1px solid #8c8c8c;
+	    	color: #141414;
+	    	font-weight: 700;
+	    	margin-bottom: 15px;
+	    	.icon-dropdown {
+	    		transition: transform .3s;
+	    	}
+	    }
+	    &.show {
+	      max-height: 500px;
+	      padding: 30px 15px 15px;
+	      border: 1px solid #8c8c8c;
+	      background-color: #fff;
+	      transition-delay: .15s, 0s, .15s, .15s;
+	      .icon-dropdown {
+	      	transform: rotate(-180deg);
+	      }
+	    }
+	    &__item {
+	      font-size: 18px;
+	      line-height: 48px;
+	      color: #646464;
+	      &.current {
+	        i {
+	          display: block;
+	        }
+	      }
+	      i {
+	        font-size: 9px;
+	        display: none;
+	      }
+	    }
+	  }
+	}
+	.work {
+		&__img {
+			height: 235px;
+			max-height: none;
+			max-width: none;
+		}
+	}
+	.testimonials-page {
+		height: 480px;
+		margin-top: -80px;
+		margin-bottom: 80px;
+		padding-top: 80px;
+		&__img {
+			display: none;
+		}
+		&-text {
+			width: 100%;
+		}
+		&__btn {
+			width: 330px;
+		}
+	}
+	.testimonials-container {
+		padding-bottom: 70px;
+		.testimonials__img {
+			height: 190px;
+			margin: 0;
+			float: none;
+		}
+		.testimonials-text {
+			padding: 20px 30px 30px 30px;
+		}
+	}
+	.blog {
+		padding-bottom: 80px;
+		&__title {
+			margin-bottom: 30px;
+		}
+		&-item {
+			height: 417px;
+		}
+		&-content {
+			padding: 25px 30px 25px;	
+		}
+		&__subtitle {
+			font-size: 18px;
+			line-height: 24px;
+			margin-bottom: 18px;
+		}
+
+		&__text {
+			margin-bottom: 15px;
+			max-height: 130px;
+			p {
+				font-size: 14px;
+			}
+		}
+		&__more {
+			font-size: 14px;
+		}
+		&__date {
+			font-size: 14px;
+		}
+		&__btn {
+			width: 330px;
+		}
+	}
 }
 
 @media (max-width: 575px) {
+	.breadcrumbs__item {
+		letter-spacing: -.25px;
+	}
 	.about {
 		margin-bottom: 65px;
 	}
