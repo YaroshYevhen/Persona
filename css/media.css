@@ -1022,6 +1022,13 @@
   .bonuses-item + .bonuses-item {
     padding-top: 30px;
   }
+  .input-file__info .info {
+    left: auto;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
 }
 
 @media (max-width: 575px) {
