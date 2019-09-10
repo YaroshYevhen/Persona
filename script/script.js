@@ -92,6 +92,7 @@ APP.$document.ready(function() {
 
     modal.addClass('active');
     $('html').addClass('overflow');
+    $('body').removeClass('menu');
   });
   
   $('.modal-close').on('click', function() {

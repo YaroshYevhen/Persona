@@ -1171,4 +1171,9 @@
 	.promotion-item {
 		height: 37vw;
 	}
+	.modal {
+		&-container {
+			padding: 45px 30px 40px;
+		}
+	}
 }	
