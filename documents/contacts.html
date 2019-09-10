@@ -127,88 +127,57 @@
 		<div class="container">
 			<ul class="breadcrumbs breadcrumbs_high">
 	      <li class="breadcrumbs__item"><a href="#">Главная</a></li>
-	      <li class="breadcrumbs__item"><a href="#">Отзывы</a></li>
+	      <li class="breadcrumbs__item"><a href="#">Контакты</a></li>
 	    </ul>
 		</div>
-		<section class="testimonials-page" style="background-image: url(../img/sertificate-bg.jpg);">
-			<div class="container position-relative d-flex h-100 align-items-center">
-				<div class="testimonials-page__img" style="background-image: url(../img/testimonials-page-img.jpg);"></div>
-				<div class="testimonials-page-text">
-					<h1 class="testimonials-page__title title-l">Отзывы</h1>
-					<p>Ваше мнение очень важно для нас! Оставте свой отзыв, чтобы помочь нам стать лучше!</p>
-					<button class="modal-btn standart-btn standart-btn_big testimonials-page__btn" data-target="testimonial">оставить отзыв</button>
+		<section class="contacts">
+			<div class="container">
+				<h1 class="contacts__title title-l">Контакты</h1>
+				<div class="row position-relative">
+					<div class="contacts-dropdown d-flex d-md-none position-absolute flex-column">
+						<span class="contacts-dropdown__item d-flex align-items-center justify-content-between current" data-city="Kolomna">Коломна <i class="icon-check"></i></span>
+						<span class="contacts-dropdown__item d-flex align-items-center justify-content-between" data-city="Voskresensk">Воскресенск <i class="icon-check"></i></span>
+						<span class="contacts-dropdown__item d-flex align-items-center justify-content-between" data-city="Egorievsk">Егорьевск <i class="icon-check"></i></span>
+					</div>
+					<div class="col-md-4">
+						<div class="contacts-item flex-column current">
+							<div class="contacts-clickable" data-city="Kolomna">
+								<h2 class="contacts__city d-flex justify-content-between align-items-center">Коломна <i class="icon-dropdown d-block d-md-none"></i></h2>
+								<div class="contacts__address"><i class="icon-location"> </i><span>Коломна, ул. Коломенская д.4</span></div>
+							</div>
+							<a href="tel:+7(916)623-10-10" class="contacts__tel">+7(916)623-10-10</a>
+							<a href="tel:+7(496)623-10-10" class="contacts__tel">+7(496)623-10-10</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="contacts-item flex-column">
+							<div class="contacts-clickable" data-city="Voskresensk">
+								<h2 class="contacts__city d-flex justify-content-between align-items-center">Воскресенск <i class="icon-dropdown d-block d-md-none"></i></h2>
+								<div class="contacts__address"><i class="icon-location"> </i><span>Воскресенск, ул. Октябрськая д.6</span></div>
+							</div>
+							<a href="tel:+7(916)060-63-36" class="contacts__tel">+7(916)060-63-36</a>
+							<a href="tel:+7(496)442-70-27" class="contacts__tel">+7(496)442-70-27</a>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="contacts-item flex-column">
+							<div class="contacts-clickable" data-city="Egorievsk">
+								<h2 class="contacts__city d-flex justify-content-between align-items-center">Егорьевск <i class="icon-dropdown d-block d-md-none"></i></h2>
+								<div class="contacts__address"><i class="icon-location"> </i><span>Егорьевск, ул. 5-ый Микрорайон д.12</span></div>
+							</div>
+							<a href="tel:+7(916) 540 54 54" class="contacts__tel">+7(916) 540 54 54</a>
+							<a href="tel:+7(496) 405 95 95" class="contacts__tel">+7(496) 405 95 95</a>
+						</div>
+					</div>
 				</div>
 			</div>
-		</section>
-		<section class="testimonials-container">
-			<div class="container">
-				<blockquote class="testimonials-item">
-							<i class="testimonials__quotes icon-quotes"></i>
-							<div class="testimonials__img" style="background-image: url(../img/testimonials-img.jpg);" role="img" aria-label="photo"></div>
-							<div class="testimonials-text">
-								<cite class="testimonials__author">Анастасия Фролова</cite>
-								<span class="testimonials__service">Услуга: <span class="font-weight-bold">Пилинг</span></span>
-								<p>Мы вынуждены отталкиваться от того, что понимание сути ресурсосберегающих технологий требует определения и уточнения новых принципов формирования материально-технической и кадровой базы. В рамках спецификации современных стандартов, сделанные на базе интернет-аналитики выводы указаны как претенденты на роль ключевых факторов!</p>
-								<div class="testimonials__footer d-flex justify-content-end">
-									<date class="testimonials__date">27 мая 2019</date>
-								</div>
-							</div>
-				</blockquote>
-				<blockquote class="testimonials-item">
-					<i class="testimonials__quotes icon-quotes"></i>
-					<div class="testimonials__img" style="background-image: url(../img/testimonials-img.jpg);" role="img" aria-label="photo"></div>
-					<div class="testimonials-text">
-						<cite class="testimonials__author">Анастасия Фролова</cite>
-						<span class="testimonials__service">Услуга: <span class="font-weight-bold">Окрашивание</span></span>
-						<p>Мы вынуждены отталкиваться от того, что понимание сути ресурсосберегающих технологий требует определения и уточнения новых принципов формирования материально-технической и кадровой базы.</p>
-						<div class="testimonials__footer d-flex justify-content-end">
-							<date class="testimonials__date">27 мая 2019</date>
-						</div>
-					</div>
-				</blockquote>
-				<blockquote class="testimonials-item">
-					<i class="testimonials__quotes icon-quotes"></i>
-					<div class="testimonials__img" style="background-image: url(../img/testimonials-img.jpg);" role="img" aria-label="photo"></div>
-					<div class="testimonials-text">
-						<cite class="testimonials__author">Анастасия Фролова</cite>
-						<span class="testimonials__service">Услуга: <span class="font-weight-bold">Окрашивание</span></span>
-						<p>Мы вынуждены отталкиваться от того, что понимание сути ресурсосберегающих технологий требует определения и уточнения новых принципов формирования материально-технической и кадровой базы. В рамках спецификации современных стандартов, сделанные на базе интернет-аналитики выводы указаны как претенденты на роль ключевых факторов! <br><br>
-						Мы вынуждены отталкиваться от того, что понимание сути ресурсосберегающих технологий требует определения и уточнения новых принципов формирования материально-технической и кадровой базы. В рамках спецификации современных стандартов, сделанные на базе интернет-аналитики выводы указаны как претенденты на роль ключевых факторов! Мы вынуждены отталкиваться от того, что понимание сути ресурсосберегающих технологий требует определения и уточнения новых принципов формирования материально-технической и кадровой базы. В рамках спецификации современных стандартов, сделанные на базе интернет-аналитики выводы указаны как претенденты на роль ключевых факторов!</p>
-						<div class="testimonials__footer d-flex justify-content-end">
-							<date class="testimonials__date">27 мая 2019</date>
-						</div>
-					</div>
-				</blockquote>
+			<div class="contacts__map">
+				<iframe class="current" data-city="Kolomna" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2283.213509419839!2d38.76371851590498!3d55.092025380381806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414a714ac2a5d477%3A0x74e2a9c2ae12872d!2z0JrQvtC70L7QvNC10L3RgdC60LDRjyDRg9C7LiwgNCwg0JrQvtC70L7QvNC90LAsINCc0L7RgdC60L7QstGB0LrQsNGPINC-0LHQuy4sINCg0L7RgdGB0LjRjywgMTQwNDA3!5e0!3m2!1sru!2sua!4v1567506902162!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				<iframe data-city="Voskresensk" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2270.048109897318!2d38.674227315913974!3d55.322245980440435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414a8a0a101eafb5%3A0x522aa3b784716391!2z0J7QutGC0Y_QsdGA0YzRgdC60LDRjyDRg9C7LiwgNiwg0JLQvtGB0LrRgNC10YHQtdC90YHQuiwg0JzQvtGB0LrQvtCy0YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNDAyMDA!5e0!3m2!1sru!2sua!4v1567520166904!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				<iframe data-city="Egorievsk" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2266.9191651721176!2d39.04961071591599!3d55.376866980454494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414a5b84dcd3d025%3A0xe7881802cab25a61!2z0J_QtdGA0YHQvtC90LAgTGFi!5e0!3m2!1sru!2sua!4v1567520446106!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 			</div>
-			<button class="standart-btn standart-btn_big standart-btn_white testimonials-container__btn mx-auto">больше отзывов</button>
 		</section>
-		<div class="modal" data-target="testimonial">
-      <div class="modal-container">
-        <div class="modal-close"></div>
-					<h1 class="modal__title title">Оставить отзыв</h1>
-					<input type="text" placeholder="Имя">
-					<input type="tel" placeholder="Телефон*">
-					<input type="email" placeholder="Почта">
-					<textarea name="message" cols="30" rows="10" placeholder="Ваш отзыв"></textarea>
-					<div class="input-file d-flex align-items-center">
-						<label for="upload-file">
-							<div class="input-file__btn">
-								<div class="layer"></div>
-							</div>
-							<p class="input-file__text">Прикрепить фото</p></label>
-						<i class="input-file__info icon-info">
-							<div class="info">
-							<span>Размер: макс. 3 Мб</span>
-							<span>Формат: .jpg, .png</span>
-						</div>
-						</i>
-						
-						<input type="file" accept=".png, .jpg, .jpeg" id="upload-file" class="input-file__hidden">
-					</div>
-					<button class="standart-btn modal__btn mx-auto">Оставить отзыв</button>
-					<p class="modal__politics">Нажимая “Записаться” вы соглашаетесь <br> с <a href="policy.html" target="_blank">политикой конфиденциальности</a></p>
-      </div>
-    </div>
+		
 	</main>
 
 	<footer class="footer d-flex">
