@@ -599,10 +599,35 @@ textarea:focus {
   color: #646464;
 }
 
+.js-opacity {
+  opacity: 0;
+  transition: opacity .6s;
+}
+
+.js-opacity.animate {
+  opacity: 1;
+}
+
 /********************/
 /* HEADER */
+@keyframes scale-infinite {
+  0%, 10%, 20%, 100% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  15% {
+    transform: scale(1.1);
+  }
+}
+
 .header {
   padding-bottom: 24px;
+}
+
+.header__btn {
+  animation: scale-infinite 5s infinite;
 }
 
 .header::before {
@@ -1005,6 +1030,26 @@ body.menu .nav__li {
   position: absolute;
   left: 0;
   top: 0;
+  transform: translateY(50%);
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+}
+
+.features__number.animate {
+  opacity: 1;
+  transform: none;
+}
+
+.features .col-md-6:nth-of-type(2) .features__number {
+  transition-delay: .2s;
+}
+
+.features .col-md-6:nth-of-type(3) .features__number {
+  transition-delay: .4s;
+}
+
+.features .col-md-6:last-of-type .features__number {
+  transition-delay: .6s;
 }
 
 /***********************/
@@ -1102,6 +1147,18 @@ body.menu .nav__li {
 
 /***********************/
 /* promo */
+@keyframes scale {
+  0%, 50%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+}
+
 .promo {
   background: 50% 50% / cover no-repeat;
   margin-bottom: 130px;
@@ -1125,6 +1182,10 @@ body.menu .nav__li {
 
 .promo__btn {
   margin-top: 35px;
+}
+
+.promo__btn.animate {
+  animation: scale 1s ease-in;
 }
 
 /************************/
@@ -1548,6 +1609,10 @@ address {
 
 .service__text {
   margin-bottom: 25px;
+}
+
+.service__btn.animate {
+  animation: scale 1s ease-in;
 }
 
 .specialists {

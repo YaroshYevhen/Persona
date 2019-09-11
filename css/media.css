@@ -152,6 +152,12 @@
   .features-item {
     margin-top: 35px;
   }
+  .features .col-md-6:nth-of-type(odd) .features__number {
+    transition-delay: 0s;
+  }
+  .features .col-md-6:nth-of-type(even) .features__number {
+    transition-delay: .2s;
+  }
   .symbol {
     height: 150px;
   }
@@ -519,6 +525,9 @@
   }
   .features-item {
     margin-top: 15px;
+  }
+  .features .col-md-6:nth-of-type(n) .features__number {
+    transition-delay: 0s;
   }
   .about {
     margin-bottom: 85px;

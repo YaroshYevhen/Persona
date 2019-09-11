@@ -187,6 +187,18 @@
 		&-item {
 			margin-top: 35px;
 		}
+		.col-md-6 {
+			&:nth-of-type(odd) {
+				.features__number {
+					transition-delay: 0s;
+				}
+			}
+			&:nth-of-type(even) {
+				.features__number {
+					transition-delay: .2s;
+				}
+			}
+		}
 	}
 	.symbol {
 		height: 150px;
@@ -602,6 +614,13 @@
 		margin-top: -15px;
 		&-item {
 			margin-top: 15px;
+		}
+		.col-md-6 {
+			&:nth-of-type(n) {
+				.features__number {
+					transition-delay: 0s;
+				}
+			}
 		}
 	}
 	.about {

@@ -15,6 +15,25 @@ APP.modalDropdownItem = $('.modal-dropdown__item');
 APP.inputFile = $('.input-file__hidden');
 APP.removeFile = $('.file');
 
+function doAnimation() {
+    var windowScroll = $(window).height() + APP.$document.scrollTop();
+
+  $('.js-animation:not(.animate)').each(function(key, item){
+    var itemOffset = $(item).offset().top + 100;
+
+    if(windowScroll >= itemOffset){
+        $(item).addClass('animate');
+    }
+  });
+  $('.js-opacity:not(.animate)').each(function(key, item){
+    var itemOffset = $(item).offset().top + 100;
+
+    if(windowScroll >= itemOffset){
+        $(item).addClass('animate');
+    }
+  });
+};
+
 function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
@@ -42,6 +61,12 @@ function currentSlideCount(item){
 }
 
 APP.$document.ready(function() {
+  doAnimation();
+
+  APP.$document.on('scroll', function(){
+    doAnimation ();
+  })
+
   APP.inputFile.on('change', function(event) {
     var file = event.target.files[0],
         fileName = file.name,
