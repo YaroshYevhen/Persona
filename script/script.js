@@ -171,6 +171,9 @@ APP.$document.ready(function() {
     $(this).toggleClass('active');
     $('body').toggleClass('menu');
     $('html').toggleClass('overflow');
+    if($('body').hasClass('menu')) {
+      $('.header-top').scrollTop(0);
+    }
   });
 
   $(document).on('click', function(event){
